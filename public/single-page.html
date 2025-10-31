@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Personal Portfolio – Single Page</title>
+  <meta name="description" content="Sailing, Robotics, Math & Sports achievements – single-page version" />
+  <style>
+    :root { --bg:#0b0b0c; --panel:#141416; --accent:#f5d442; --primary:#b91c1c; --text:#e5e7eb; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; background: var(--bg); color: var(--text); }
+    header { position: sticky; top:0; backdrop-filter: blur(8px); background: rgba(20,20,22,.7); border-bottom: 1px solid #3f3f46; z-index: 20; }
+    nav { max-width: 1100px; margin: 0 auto; display:flex; align-items:center; justify-content: space-between; padding: 12px 16px; }
+    nav a { color: var(--accent); text-decoration:none; margin-left: 12px; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 24px 16px; }
+    .hero { padding: 48px 0; }
+    .hero h1 { font-size: 40px; margin: 0 0 8px; }
+    .hero p { margin: 0; opacity:.9; }
+    .section { margin: 28px 0 40px; padding: 24px; border: 1px solid #3f3f46; border-radius: 16px; background: linear-gradient(135deg, rgba(185,28,28,.35), rgba(0,0,0,.35)); }
+    .section h2 { margin:0 0 12px; color: var(--accent); }
+    .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+    .card { border:1px solid #3f3f46; border-radius: 12px; overflow:hidden; background: var(--panel); }
+    .card img { width:100%; height:220px; object-fit:cover; display:block; }
+    .card p { margin: 10px 12px 12px; font-size: 14px; opacity:.9; }
+    .note { font-size: 13px; opacity:.8; margin-top: 8px; }
+    footer { margin-top: 40px; padding: 24px 16px; border-top: 1px solid #3f3f46; text-align:center; opacity:.8; }
+    .pill { display:inline-block; padding:6px 10px; border:1px solid #3f3f46; border-radius:999px; margin:4px 6px 0 0; font-size: 13px; background: #1f1f22; }
+    .anchor { scroll-margin-top: 72px; }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div>Portfolio</div>
+      <div>
+        <a href="#sailing">Sailing</a>
+        <a href="#robotics">Robotics</a>
+        <a href="#math">Math</a>
+        <a href="#sports">Sports</a>
+        <a href="#media">Media</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Achievements & Activities</h1>
+      <p>HOBIE16 Asian Championships 3rd; MakeX Asia Champion; USACO Bronze Full Score; AMC8 24/25; UKMT Gold.</p>
+    </section>
+
+    <section id="sailing" class="section anchor">
+      <h2>Sailing</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="/image/HOBIE16亚锦赛/2025年威海HOBIE16帆船亚锦赛比赛照片1.png" alt="Sailing photo 1" />
+          <p>HOBIE16 Asian Championships – Race Photo 1</p>
+        </div>
+        <div class="card">
+          <img src="/image/HOBIE16亚锦赛/2025年威海HOBIE16帆船亚锦赛比赛照片2.jpg" alt="Sailing photo 2" />
+          <p>HOBIE16 Asian Championships – Race Photo 2</p>
+        </div>
+        <div class="card">
+          <img src="/image/HOBIE16亚锦赛/2025年威海HOBIE16帆船亚锦赛比赛照片3.jpg" alt="Sailing photo 3" />
+          <p>HOBIE16 Asian Championships – Race Photo 3</p>
+        </div>
+        <div class="card">
+          <img src="/image/HOBIE16亚锦赛/2025年威海HOBIE16帆船亚锦赛比赛照片4.png" alt="Sailing photo 4" />
+          <p>HOBIE16 Asian Championships – Race Photo 4</p>
+        </div>
+        <div class="card">
+          <img src="/image/HOBIE16亚锦赛/2025年威海HOBIE16帆船亚锦赛季军.png" alt="Sailing medal" />
+          <p>HOBIE16 Asian Championships – 3rd Place</p>
+        </div>
+      </div>
+      <div class="note">Certifications: <span class="pill">RYA</span> <span class="pill">ASA</span></div>
+    </section>
+
+    <section id="robotics" class="section anchor">
+      <h2>Robotics</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="/image/竞赛与荣誉证书/MAKE X机器人/2023年世界机器人亚洲锦标赛冠军.jpg" alt="MakeX Asia Champion" />
+          <p>MakeX Asia Champion</p>
+        </div>
+        <div class="card">
+          <img src="/image/竞赛与荣誉证书/MAKE X机器人/2023年世界机器人总决赛亚军.png" alt="MakeX Global Runner-up" />
+          <p>MakeX Global Runner-up</p>
+        </div>
+        <div class="card">
+          <img src="/image/竞赛与荣誉证书/MAKE X机器人/2023年世界机器人烟台锦标赛一等奖.png" alt="Yantai Championship" />
+          <p>Yantai Championship – First Prize</p>
+        </div>
+        <div class="card">
+          <img src="/image/竞赛与荣誉证书/MAKE X机器人/2024年世界机器人北京选拔赛冠军.png" alt="Beijing Selection Champion" />
+          <p>Beijing Selection – Champion</p>
+        </div>
+      </div>
+      <div class="note">Focus areas: <span class="pill">AI/ML</span> <span class="pill">Hardware</span> <span class="pill">Leadership</span></div>
+    </section>
+
+    <section id="math" class="section anchor">
+      <h2>Mathematics & Programming</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="/image/竞赛与荣誉证书/数学竞赛/USACO/USACO 2025 bronze full score.png" alt="USACO Bronze Full Score" />
+          <p>USACO Bronze – Full Score</p>
+        </div>
+        <div class="card">
+          <img src="/image/竞赛与荣誉证书/数学竞赛/AMC8/2025 AMC8 24.jpg" alt="AMC8 24/25" />
+          <p>AMC8 – 24/25</p>
+        </div>
+        <div class="card">
+          <img src="/image/竞赛与荣誉证书/数学竞赛/UKMT/2023JMC金奖.jpg" alt="UKMT Gold" />
+          <p>UKMT – Gold Medal</p>
+        </div>
+      </div>
+      <div class="note">Skills: <span class="pill">C++</span> <span class="pill">Python</span> <span class="pill">Algorithms</span></div>
+    </section>
+
+    <section id="sports" class="section anchor">
+      <h2>Sports Teams & Training</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="/image/课外活动 (2)/击剑/2019年佩剑第二名.jpg" alt="Fencing 2nd Place" />
+          <p>Fencing – 2nd Place (2019)</p>
+        </div>
+        <div class="card">
+          <img src="/image/课外活动 (2)/滑雪/单板3级证书.jpg" alt="Snowboard Level 3" />
+          <p>Skiing – Snowboard Level 3</p>
+        </div>
+        <div class="card">
+          <img src="/image/课外活动 (2)/滑雪/单板6级证书.jpg" alt="Snowboard Level 6" />
+          <p>Skiing – Snowboard Level 6</p>
+        </div>
+      </div>
+      <div class="note">Other: <span class="pill">Basketball</span> <span class="pill">Football</span> <span class="pill">Swimming</span></div>
+    </section>
+
+    <section id="media" class="section anchor">
+      <h2>Media & Publications</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="/image/刊物报道/2025年芊棠体育报道.png" alt="Sports Media 2025" />
+          <p>Sports Media Coverage (2025)</p>
+        </div>
+        <div class="card">
+          <img src="/image/刊物报道/2025年哈罗简报.png" alt="Harrow Brief 2025" />
+          <p>Harrow Brief (2025)</p>
+        </div>
+        <div class="card">
+          <img src="/image/刊物报道/2023年世界机器人亚洲锦标赛运动员发言照片.jpg" alt="Robot Championship Speech" />
+          <p>Robot Championship – Speech</p>
+        </div>
+      </div>
+      <p class="note">Video: GivingTuesday R1.mp4 (recommend uploading to YouTube/Vimeo and embedding).</p>
+    </section>
+
+    <footer>
+      © Portfolio – Single Page Export
+    </footer>
+  </main>
+</body>
+</html>

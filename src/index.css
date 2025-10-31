@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+}
+
+/* Custom animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-30px) rotate(180deg);
+  }
+}
+
+@keyframes bubble {
+  0% {
+    transform: translateY(0px) scale(1);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translateY(-15px) scale(1.1);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(0px) scale(1);
+    opacity: 0.3;
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: floatSlow 8s ease-in-out infinite;
+}
+
+.animate-bubble {
+  animation: bubble 4s ease-in-out infinite;
+}
+/* Ensure proper background rendering */
+body {
+  background: white;
+}
+
+/* Sun-themed gradient backgrounds */
+.bg-sun-gradient {
+  background: linear-gradient(135deg, #FEF3C7 0%, #FED7AA 25%, #FDBA74 50%, #FB923C 75%, #F97316 100%);
+}
+
+.bg-sunset-gradient {
+  background: linear-gradient(135deg, #7C2D12 0%, #DC2626 25%, #F97316 50%, #FBBF24 75%, #FEF3C7 100%);
+}
+
+.bg-sunrise-gradient {
+  background: linear-gradient(135deg, #FEF3C7 0%, #FBBF24 25%, #F59E0B 50%, #EA580C 75%, #DC2626 100%);
+}
+
+.bg-golden-hour {
+  background: linear-gradient(135deg, #FFFBEB 0%, #FEF3C7 20%, #FDE68A 40%, #FBBF24 60%, #F59E0B 80%, #D97706 100%);
+}
+
+.bg-warm-glow {
+  background: linear-gradient(135deg, #FFF7ED 0%, #FFEDD5 25%, #FED7AA 50%, #FDBA74 75%, #FB923C 100%);
+}
+
+/* Enhanced section backgrounds */
+.section-warm {
+  background: linear-gradient(135deg, rgba(254, 243, 199, 0.9) 0%, rgba(253, 186, 116, 0.8) 50%, rgba(251, 146, 60, 0.7) 100%);
+  backdrop-filter: blur(10px);
+}
+
+.section-sunset {
+  background: linear-gradient(135deg, rgba(124, 45, 18, 0.9) 0%, rgba(220, 38, 38, 0.8) 25%, rgba(249, 115, 22, 0.7) 50%, rgba(251, 191, 36, 0.6) 75%, rgba(254, 243, 199, 0.5) 100%);
+  backdrop-filter: blur(10px);
+}
+
+/* Custom gradient backgrounds (legacy support) */
+.bg-stanford-gradient {
+  background: linear-gradient(135deg, #B91C1C 0%, #DC2626 50%, #F97316 100%);
+}
+
+.bg-stanford-light {
+  background: linear-gradient(135deg, #FEF2F2 0%, #FED7AA 50%, #FEF3C7 100%);
+}
